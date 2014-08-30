@@ -4,9 +4,15 @@ Vim Vigor repeatedly checks for external changes to a file on the disk, and when
 
 ### Installation
 
-For [Pathogen](https://github.com/tpope/vim-pathogen) users, run this in your terminal: `cd ~/.vim/bundle; git clone git://github.com/pieman72/vim-vigor.git`
+For [Pathogen](https://github.com/tpope/vim-pathogen) users, run this in your terminal:
 
-For [Vundle](https://github.com/gmarik/vundle) users, edit your `~/.vimrc` file, and add this line: `Plugin 'pieman72/vim-vigor'`. Then open Vim and type `:BundleInstall`.
+`cd ~/.vim/bundle; git clone git://github.com/pieman72/vim-vigor.git`
+
+For [Vundle](https://github.com/gmarik/vundle) users, edit your `~/.vimrc` file, and add this line:
+
+`Plugin 'pieman72/vim-vigor'`
+
+Then open Vim and type `:BundleInstall`.
 
 ### Usage
 
