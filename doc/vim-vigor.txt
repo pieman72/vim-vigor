@@ -1,0 +1,55 @@
+*vim-vigor.txt*    Vigorously reload a file in a buffer to see external changes.
+
+
+                                   Vim Vigor                          *VimVigor*
+
+Author:             Kenny Harvey <http://harveyserv.ath.cx/kenny/>
+Plugin Homepage:    <https://github.com/pieman72/vim-vigor>
+
+================================================================================
+CONTENTS                                                      *VimVigorContents*
+
+  1.  Introduction ....................... |VimVigorIntroduction|
+  2.  Installation ....................... |VimVigorInstallation|
+  3.  Usage .............................. |VimVigorUsage|
+  3.  Customization ...................... |VimVigorCustomization|
+
+================================================================================
+1. INTRODUCTION                                           *VimVigorIntroduction*
+
+Vim Vigor repeatedly checks for external changes to a file on the disk, and when
+detected, automatically re-reads the file into the current buffer, allowing you
+to see the changes right away. This lets Vim behave similarly to the 'tail' (1)
+command with the '-f' option, except that you still reap the benefits of Vim's
+syntax highlighting and other formatting/editing features.
+
+================================================================================
+2. INSTALLATION                                           *VimVigorInstallation*
+
+For Pathogen users, run this in your terminal:
+>
+  cd ~/.vim/bundle; git clone git://github.com/pieman72/vim-vigor.git
+<
+
+For Vundle users, edit your |~/.vimrc| file, and add this line:
+>
+  Plugin 'pieman72/vim-vigor'
+<
+Then open Vim and type ':BundleInstall'.
+
+================================================================================
+3. USAGE                                             *:VimVigor* *VimVigorUsage*
+
+To begin vigorously watching for changes, use the VimVigor command:
+>
+  :VimVigor
+<
+
+To stop watching for changes, use CTRL+c.
+
+================================================================================
+4. CUSTOMIZATION                                         *VimVigorCustomization*
+
+Vim Vigor allows for some customization with the following settings:
+
+vimvigor_sleep_duration: The interval at which to check for changes (in seconds)
