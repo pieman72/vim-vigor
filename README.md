@@ -18,6 +18,8 @@ Then open Vim and type `:BundleInstall`.
 
 To begin reloading the current buffer, type `:VimVigor`
 
+To stop reloading the current buffer, use CTRL+c
+
 ### Customization
 
 Vigor allows the following options to be configured in your `~/.vimrc` file:
